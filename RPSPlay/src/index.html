@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+  <div class="page-shell">
+    <header>
+      <h1>🪨📄✂️ RPSPlay</h1>
+      <p>Rock. Paper. Scissors. Fight!</p>
+    </header>
+    <main id="game">
+      <section class="scoreboard" id="scoreboard">
+        <div id="player-score" class="score-box">
+          You: 0
+        </div>
+        <div id="computer-score" class="score-box">
+          Computer: 0
+        </div>
+      </section>
+      <section class="battle">
+        <div id="player-choice" class="battle-box">
+          🤔
+        </div>
+        <div id="vs">
+          VS
+        </div>
+        <div id="computer-choice" class="battle-box">
+          🤖
+        </div>
+      </section>
+      <section class="choices" id="choices">
+        <button class="choice" data-choice="rock">
+          <img src="./assets/images/stone.png" alt="Rock">
+          <span>Rock</span>
+          <div class="shine"></div>
+        </button>
+        <button class="choice" data-choice="paper">
+          <img src="./assets/images/scroll.png" alt="Paper">
+          <span>Paper</span>
+          <div class="shine"></div>
+        </button>
+        <button class="choice" data-choice="scissors">
+          <img src="./assets/images/scissors.png" alt="Scissors">
+          <span>Scissors</span>
+          <div class="shine"></div>
+        </button>
+      </section>
+      <h2 id="result-text">Make your move!</h2>
+      <button id="reset">🔁 Reset</button>
+    </main>
+    <footer>
+      <p>Made with ❤️ by Kwadwo</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
